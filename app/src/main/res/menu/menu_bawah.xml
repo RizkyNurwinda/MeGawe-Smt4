@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"/>
+    <item
+        android:id="@+id/like"
+        android:icon="@drawable/like"
+        android:title="Rekomendasi"/>
+    <item
+        android:id="@+id/pesan"
+        android:icon="@drawable/pesan"
+        android:title="Pesan"/>
+    <item
+        android:id="@+id/profil"
+        android:icon="@drawable/profil"
+        android:title="Login"/>
+</menu>

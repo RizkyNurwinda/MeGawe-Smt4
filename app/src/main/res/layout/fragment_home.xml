@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="#0F86FF">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/pngmegawe"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginBottom="20dp"
+        android:iconifiedByDefault="false"
+        android:padding="2dp"
+        android:queryHint="Cari disini" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="For You"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn1"
+            android:layout_weight="1"/>
+        <Button
+            android:text="Admin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn2"
+            android:layout_weight="1"/>
+        <Button
+            android:text="All Jobs"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn3"
+            android:layout_weight="1"/>
+        <Button
+            android:text="Sales"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn4"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="18dp">
+
+            <TextView
+                android:id="@+id/lowongan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="PT Lukas Perdana"
+                android:textSize="28dp"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:typeface="serif"
+                android:text="DIbutuhkan tenaga keahian untuk memperbaiki webisyte deskripsi yang diberikan. Waktu kerja 14 hari"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
