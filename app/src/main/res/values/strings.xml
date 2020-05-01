@@ -2,8 +2,9 @@
     <string name="app_name">megawe</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="home">Home</string>
     <string name="rekomendasi">Rekomendasi</string>
+    <string name="home">Home</string>
+
     <string name="cari">Cari</string>
     <string name="login">Login</string>
 
