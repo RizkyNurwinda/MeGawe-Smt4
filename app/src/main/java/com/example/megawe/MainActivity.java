@@ -41,13 +41,19 @@ public class MainActivity extends AppCompatActivity {
                     Fragment selectedFragment = null;
 
                     switch (item.getItemId()) {
-                        case R.id.cari:
+                        case R.id.pesan:
                             selectedFragment = new CariFragment();
                             break;
                         case R.id.like:
                             selectedFragment = new LikeFragment();
                             break;
+                        case R.id.profil:
+                            selectedFragment = new Loginfragment();
+                            break;
+
                     }
+
+
 
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
 
