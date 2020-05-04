@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
                     Fragment selectedFragment = null;
 
                     switch (item.getItemId()) {
+                        case R.id.home:
+                            selectedFragment = new HomeFragment();
+                            break;
                         case R.id.pesan:
                             selectedFragment = new CariFragment();
                             break;
