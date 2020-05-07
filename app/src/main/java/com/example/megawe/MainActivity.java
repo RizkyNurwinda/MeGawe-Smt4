@@ -4,64 +4,50 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
+
+    private Button btn1, btn2, btn3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        btn1=(Button) findViewById(R.id.btn1);
+        btn1.setOnClickListener(this);
 
+        btn2=(Button) findViewById(R.id.btn2);
+        btn2.setOnClickListener(this);
 
-        loadFragment (new HomeFragment());
-        BottomNavigationView bottomNav = findViewById(R.id.menu_bawah);
-        bottomNav.setOnNavigationItemSelectedListener(navListener);
+        btn3=(Button) findViewById(R.id.btn3);
+        btn3.setOnClickListener(this);
     }
 
-    private boolean loadFragment(Fragment fragment) {
-        if (fragment != null) {
-            getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.fragment_container, fragment)
-                    .commit();
-            return true;
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn1:
+                Intent rekomendasi =new Intent(MainActivity.this, RekomendasiActivity.class);
+                startActivity(rekomendasi);
+                break;
+            case R.id.btn2:
+                Intent pesan =new Intent(MainActivity.this, PesanActivity.class);
+                startActivity(pesan);
+                break;
+            case R.id.btn3:
+                Intent add= new Intent(MainActivity.this, AddActivity.class);
+                startActivity(add);
+                break;
+
         }
-        return false;
     }
-
-    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
-            new BottomNavigationView.OnNavigationItemSelectedListener() {
-                @Override
-                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-                    Fragment selectedFragment = null;
-
-                    switch (item.getItemId()) {
-                        case R.id.home:
-                            selectedFragment = new HomeFragment();
-                            break;
-                        case R.id.pesan:
-                            selectedFragment = new CariFragment();
-                            break;
-                        case R.id.like:
-                            selectedFragment = new LikeFragment();
-                            break;
-                        case R.id.profil:
-                            selectedFragment = new Loginfragment();
-                            break;
-
-                    }
-
-
-
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
-
-                    //return false;
-                    return true;
-                }
-            };
 }
