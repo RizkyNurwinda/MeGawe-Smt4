@@ -11,6 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".RegistrasiActivity"></activity>
+        <activity android:name=".AddActivity" />
+        <activity android:name=".PesanActivity" />
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden"
