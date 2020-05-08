@@ -11,31 +11,33 @@
         android:layout_width="90dp"
         android:layout_height="176dp"
         android:layout_gravity="center"
-        android:src="@drawable/orang" />
+        android:layout_marginTop="30dp"
+        android:src="@drawable/user_icon" />
+
 
     <Button
         android:id="@+id/TambahPekerjaan"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@color/colorAccent"
+        android:background="@drawable/cutomlengkung"
         android:text="Tambah Pekerjaan" />
 
     <Button
         android:id="@+id/Riwayat"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginVertical="10dp"
-        android:background="@color/colorAccent"
+        android:background="@drawable/cutomlengkung"
         android:text="Riwayat" />
 
     <Button
         android:id="@+id/Profil"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginVertical="10dp"
-        android:background="@color/colorAccent"
+        android:background="@drawable/cutomlengkung"
         android:text="Profil"/>
 </LinearLayout>
