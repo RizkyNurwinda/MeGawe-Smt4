@@ -11,7 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".AfterLoginActivity"></activity>
+=======
+        <activity android:name=".ProfilActivity"></activity>
+        <activity android:name=".RiwayatActivity" />
+        <activity android:name=".AddPekerjaanActivity" />
+>>>>>>> 403aad989f12c238772ba874e5e31626fd834580
         <activity android:name=".RegistrasiActivity" />
         <activity android:name=".AddActivity" />
         <activity android:name=".PesanActivity" />
