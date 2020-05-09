@@ -11,20 +11,47 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity
+            android:name=".HapusActivity"
+            android:theme="@style/MyLightActionBar"
+            android:parentActivityName=".RekomendasiActivity"></activity>
+        <activity
+            android:name=".EditActivity"
+            android:theme="@style/MyLightActionBar"
+            android:parentActivityName=".RekomendasiActivity"/>
         <activity
             android:name=".RiwayatActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/MyLightActionBar"
+            android:parentActivityName=".AfterLoginActivity"/>
         <activity
             android:name=".AfterLoginActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".ProfilActivity"></activity>
-        <activity android:name=".AddPekerjaanActivity" />
-        <activity android:name=".RegistrasiActivity" />
-        <activity android:name=".AddActivity" />
-        <activity android:name=".PesanActivity" />
+        <activity
+            android:name=".ProfilActivity"
+            android:theme="@style/MyLightActionBar"
+            android:parentActivityName=".AfterLoginActivity"/>
+        <activity
+            android:name=".AddPekerjaanActivity"
+            android:theme="@style/MyLightActionBar"
+            android:parentActivityName=".AfterLoginActivity"/>
+        <activity
+            android:name=".RegistrasiActivity"
+            android:theme="@style/MyLightActionBar"/>
+        <activity
+            android:name=".AddActivity"
+            android:theme="@style/MyLightActionBar"/>
+        <activity
+            android:name=".PesanActivity"
+            android:label="@string/pesan"
+            android:theme="@style/MyLightActionBar"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".RekomendasiActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"/>
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden"
