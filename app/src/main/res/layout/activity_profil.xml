@@ -72,16 +72,15 @@
         android:layout_gravity="center"
         android:layout_marginVertical="30dp"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/ktp"/>
+        android:layout_centerVertical="true"/>
 
     <Button
 
         android:id="@+id/simpan_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="30dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginTop="30dp"
         android:background="@color/colorAccent"
         android:onClick="submit"
         android:text="Unggah"
