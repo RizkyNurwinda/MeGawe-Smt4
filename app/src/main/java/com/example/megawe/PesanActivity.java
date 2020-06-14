@@ -4,6 +4,8 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import java.util.Calendar;
 
@@ -16,6 +18,5 @@ public class PesanActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Pesan");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
 }
