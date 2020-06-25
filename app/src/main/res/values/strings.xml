@@ -11,6 +11,4 @@
     <string name="cancel">Cancel</string>
     <string name="todo">TODO</string>
     <string name="pesan">Pesan</string>
-    <string name="logout">Logout</string>
-    <string name="edit">Edit</string>
 </resources>

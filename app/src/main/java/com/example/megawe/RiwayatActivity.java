@@ -2,10 +2,18 @@ package com.example.megawe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.SearchView;
+import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.Toolbar;
 
 public class RiwayatActivity extends AppCompatActivity implements View.OnClickListener {
     private Button edit, hapus;
@@ -34,7 +42,7 @@ public class RiwayatActivity extends AppCompatActivity implements View.OnClickLi
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.btnedit:
-                Intent btnedit =new Intent(RiwayatActivity.this, EditLowonganActivity.class);
+                Intent btnedit =new Intent(RiwayatActivity.this, EditActivity.class);
                 startActivity(btnedit);
                 break;
             case R.id.btnhapus:
