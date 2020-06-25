@@ -1,41 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_height="fill_parent"
-    android:layout_width="fill_parent"
-    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:title="@string/pesan"
     tools:context=".PesanActivity">
 
-    <View
-        android:id="@+id/megawe_header"
-        android:layout_width="wrap_content"
-        android:layout_height="300dp"
-        android:background="@drawable/megawe_header"/>
-    <TextView
-        android:id="@+id/tvemail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:typeface="sans"
-        android:textStyle="bold"
-        android:text="Hallo, Jika ada kendala anda bisa menghubungi kami">
-
-    </TextView>
-
-    <Button
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:layout_width="300dp"
-        android:textColor="#fff"
-        android:background="@drawable/cutomlengkung"
-        android:layout_height="wrap_content"
-        android:onClick="onButtonTap"
-        android:text="Kirim Email"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="139dp"
-        tools:layout_editor_absoluteY="167dp" />
-
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

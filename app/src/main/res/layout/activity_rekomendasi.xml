@@ -59,18 +59,11 @@
             android:id="@+id/sales"
             android:layout_weight="1"/>
     </LinearLayout>
-    <LinearLayout
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="280dp">
+        android:id="@+id/listView"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/item_rekomendasi"
-            android:layout_margin="5dp"/>
-    </LinearLayout>
 
 
 </LinearLayout>

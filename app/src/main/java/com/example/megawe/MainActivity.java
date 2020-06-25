@@ -22,13 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         btn1=(Button) findViewById(R.id.btn1);
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent a = new Intent(MainActivity.this, ActivityLowonganKerja.class);
-                startActivity(a);
-            }
-        });
+        btn1.setOnClickListener(this);
 
         btn2=(Button) findViewById(R.id.btn2);
         btn2.setOnClickListener(this);
