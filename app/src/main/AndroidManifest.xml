@@ -11,17 +11,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".EditProfil"></activity>
         <activity android:name=".DetailLowongan" />
+=======
+>>>>>>> ac42c3b6ee973154fa444aa613c37627e33ddb00
         <activity
             android:name=".HapusActivity"
             android:theme="@style/MyLightActionBar"
             android:parentActivityName=".RekomendasiActivity"></activity>
         <activity
+<<<<<<< HEAD
             android:name=".EditLowonganActivity"
             android:parentActivityName=".RekomendasiActivity"
             android:theme="@style/MyLightActionBar" />
 
+=======
+            android:name=".EditActivity"
+            android:theme="@style/MyLightActionBar"
+            android:parentActivityName=".RekomendasiActivity"/>
+>>>>>>> ac42c3b6ee973154fa444aa613c37627e33ddb00
         <activity
             android:name=".RiwayatActivity"
             android:theme="@style/MyLightActionBar"
@@ -33,8 +42,11 @@
             android:theme="@style/NoActionBar" />
         <activity
             android:name=".ProfilActivity"
+<<<<<<< HEAD
             android:parentActivityName=".AfterLoginActivity"
             android:theme="@style/NoActionBar" />
+=======
+>>>>>>> ac42c3b6ee973154fa444aa613c37627e33ddb00
             android:theme="@style/MyLightActionBar"
             android:parentActivityName=".AfterLoginActivity"/>
         <activity
