@@ -9,6 +9,7 @@ public class konfigurasi {
 
 //    ip dirubah sesuai laptop masing" sesuai ip local
     public static final String URL_LOGIN = "http://192.168.43.68/Web-Smt4/Api/LoginApi";
+    public static final String URL_REGISTER = "http://192.168.43.68/Web-Smt4/Api/RegisterApi";
 
     //Dibawah ini merupakan Kunci yang akan digunakan untuk mengirim permintaan ke Skrip PHP
     public static final String KEY_EMP_ID = "id";

@@ -42,6 +42,8 @@ public class AddActivity extends AppCompatActivity {
     //Declaration Button
     Button buttonLogin;
 
+    //Declaration SqliteHelper
+    SqliteHelper sqliteHelper;
 
     //    progressdialog dan request queue volley
     ProgressDialog progressDialog;
@@ -54,6 +56,7 @@ public class AddActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
+        sqliteHelper = new SqliteHelper(this);
         initCreateAccountTextView();
         initViews();
 
@@ -74,8 +77,6 @@ public class AddActivity extends AppCompatActivity {
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
 //                Check user input is correct or not
                 if (validate()) {
                     loginProcess();
@@ -96,6 +97,7 @@ public class AddActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(AddActivity.this, RegistrasiActivity.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

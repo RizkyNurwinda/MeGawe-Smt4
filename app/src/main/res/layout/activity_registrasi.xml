@@ -20,7 +20,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:src="@drawable/user_icon"/>
+            android:src="@drawable/user_icon" />
 
         <TextView
             android:id="@+id/TextView1"
@@ -53,14 +53,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            app:errorEnabled="true">
+            android:hint="Masukkan password"
+            app:errorEnabled="true"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorAccent">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editTextEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/email"
-                android:inputType="textEmailAddress" />
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -68,6 +70,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:hint="Konfirmasi password"
             app:errorEnabled="true"
             app:passwordToggleEnabled="true"
             app:passwordToggleTint="@color/colorAccent">
@@ -76,9 +79,27 @@
                 android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/password"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingin mendaftar sebagai?" />
+
+            <Spinner
+                android:id="@+id/levelSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="1dp" />
+
+        </LinearLayout>
 
         <LinearLayout
 
@@ -87,12 +108,13 @@
 
             <Button
                 android:id="@+id/daftar_button"
-                android:text="@string/register"
                 android:layout_width="0dp"
-                android:layout_marginLeft="30dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
                 android:background="@color/colorAccent"
-                android:layout_weight="1"/>
+                android:text="@string/register" />
+
             <TextView
                 android:id="@+id/textViewLogin"
                 android:layout_width="wrap_content"
@@ -102,13 +124,15 @@
                 android:gravity="center"
                 android:text="@string/back_to_login"
                 android:textColor="@android:color/white" />
+
             <Button
                 android:id="@+id/cancel_button"
-                android:text="@string/cancel"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:background="@color/colorAccent"
-                android:layout_weight="1"/>
+                android:text="@string/cancel" />
+
             <TextView
                 android:id="@+id/textViewCancel"
                 android:layout_width="wrap_content"

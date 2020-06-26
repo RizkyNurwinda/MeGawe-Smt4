@@ -11,4 +11,10 @@
     <string name="cancel">Cancel</string>
     <string name="todo">TODO</string>
     <string name="pesan">Pesan</string>
+    
+    <string-array name="level_user">
+        <item>Pilih disini</item>
+        <item>MEMBER</item>
+        <item>PERUSAHAAN</item>
+    </string-array>
 </resources>
