@@ -34,7 +34,16 @@
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/btn3"
-        android:text="Tambah Pekerjaan"
+        android:text="Riwayat"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:background="@drawable/cutomlengkung"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn4"
+        android:text="Profil"
         android:layout_marginTop="20dp"
         android:textColor="#fff"
         android:background="@drawable/cutomlengkung"

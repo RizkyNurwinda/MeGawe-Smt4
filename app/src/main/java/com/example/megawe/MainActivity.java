@@ -1,3 +1,4 @@
+
 package com.example.megawe;
 
 import androidx.annotation.NonNull;
@@ -14,7 +15,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
 
-    private Button btn1, btn2, btn3;
+    private Button btn1, btn2, btn3, btn4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,13 +23,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         btn1=(Button) findViewById(R.id.btn1);
-        btn1.setOnClickListener(this);
+        btn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(MainActivity.this, ActivityLowonganKerja.class);
+                startActivity(a);
+            }
+        });
 
         btn2=(Button) findViewById(R.id.btn2);
         btn2.setOnClickListener(this);
 
         btn3=(Button) findViewById(R.id.btn3);
         btn3.setOnClickListener(this);
+
+        btn4=(Button) findViewById(R.id.btn4);
+        btn4.setOnClickListener(this);
+
+
     }
 
 
@@ -44,8 +56,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(pesan);
                 break;
             case R.id.btn3:
-                Intent add= new Intent(MainActivity.this, AddActivity.class);
+                Intent add= new Intent(MainActivity.this, RiwayatActivity.class);
                 startActivity(add);
+                break;
+            case R.id.btn4:
+                Intent profil= new Intent(MainActivity.this, ProfilActivity.class);
+                startActivity(profil);
                 break;
 
         }

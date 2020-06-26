@@ -13,61 +13,58 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ActivityLowonganKerja"></activity>
         <activity
             android:name=".HapusActivity"
-            android:theme="@style/MyLightActionBar"
-            android:parentActivityName=".RekomendasiActivity"></activity>
+            android:parentActivityName=".RekomendasiActivity"
+            android:theme="@style/MyLightActionBar" />
         <activity
             android:name=".EditActivity"
-            android:theme="@style/MyLightActionBar"
-            android:parentActivityName=".RekomendasiActivity"/>
+            android:parentActivityName=".RekomendasiActivity"
+            android:theme="@style/MyLightActionBar" />
         <activity
             android:name=".RiwayatActivity"
-            android:theme="@style/MyLightActionBar"
-            android:parentActivityName=".AfterLoginActivity"/>
+            android:parentActivityName=".AfterLoginActivity"
+            android:theme="@style/MyLightActionBar" />
         <activity
             android:name=".AfterLoginActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"
             android:theme="@style/NoActionBar" />
         <activity
             android:name=".ProfilActivity"
-            android:theme="@style/MyLightActionBar"
-            android:parentActivityName=".AfterLoginActivity"/>
+            android:parentActivityName=".AfterLoginActivity"
+            android:theme="@style/MyLightActionBar" />
         <activity
             android:name=".AddPekerjaanActivity"
-            android:theme="@style/MyLightActionBar"
-            android:parentActivityName=".AfterLoginActivity"/>
+            android:parentActivityName=".AfterLoginActivity"
+            android:theme="@style/MyLightActionBar" />
         <activity
             android:name=".RegistrasiActivity"
-            android:theme="@style/MyLightActionBar"/>
+            android:theme="@style/MyLightActionBar" />
         <activity
             android:name=".AddActivity"
-            android:theme="@style/MyLightActionBar">
+            android:theme="@style/MyLightActionBar" />
+        <activity
+            android:name=".PesanActivity"
+            android:label="@string/pesan"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/MyLightActionBar" />
+        <activity
+            android:name=".RekomendasiActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".PesanActivity"
-            android:label="@string/pesan"
-            android:theme="@style/MyLightActionBar"
-            android:parentActivityName=".MainActivity"/>
-        <activity
-            android:name=".RekomendasiActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"
-            android:theme="@style/NoActionBar"/>
-        <activity
-            android:name=".MainActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"
-            android:theme="@style/NoActionBar">
         </activity>
     </application>
 
