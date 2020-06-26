@@ -8,13 +8,19 @@ import android.view.View;
 import android.widget.Button;
 
 public class AfterLoginActivity extends AppCompatActivity implements View.OnClickListener {
+//    sessionmanager dipakai pada activity ini untuk process logout
+    SessionManager sessionManager;
 
-    private Button TambahPekerjaan, Riwayat, Profil;
+    private Button TambahPekerjaan, Riwayat, Profil, Logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_after_login);
+
+//        menyambungkan sessionmanager pada context class ini
+//        dengan instance constructor
+        sessionManager = new SessionManager(this);
 
         TambahPekerjaan=(Button) findViewById(R.id.TambahPekerjaan);
         TambahPekerjaan.setOnClickListener(this);
@@ -24,6 +30,9 @@ public class AfterLoginActivity extends AppCompatActivity implements View.OnClic
 
         Profil=(Button) findViewById(R.id.Profil);
         Profil.setOnClickListener(this);
+
+        Logout = findViewById(R.id.btnLogout);
+        Logout.setOnClickListener(this);
     }
 
 
@@ -42,7 +51,9 @@ public class AfterLoginActivity extends AppCompatActivity implements View.OnClic
                 Intent add= new Intent(AfterLoginActivity.this, ProfilActivity.class);
                 startActivity(add);
                 break;
-
+            case R.id.btnLogout:
+                sessionManager.logout();
+                break;
         }
     }
 }

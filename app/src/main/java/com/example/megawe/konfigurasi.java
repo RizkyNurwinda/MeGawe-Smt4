@@ -7,6 +7,9 @@ public class konfigurasi {
     public static final String URL_UPDATE_EMP = "http://192.168.1.9/Android/pegawai/updatePgw.php";
     public static final String URL_DELETE_EMP = "http://192.168.1.9/Android/pegawai/hapusPgw.php?id=";
 
+//    ip dirubah sesuai laptop masing" sesuai ip local
+    public static final String URL_LOGIN = "http://192.168.43.68/Web-Smt4/Api/LoginApi";
+
     //Dibawah ini merupakan Kunci yang akan digunakan untuk mengirim permintaan ke Skrip PHP
     public static final String KEY_EMP_ID = "id";
     public static final String KEY_EMP_NAMA = "name";

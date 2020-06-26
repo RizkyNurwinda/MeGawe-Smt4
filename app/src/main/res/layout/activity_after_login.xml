@@ -44,4 +44,14 @@
         android:layout_marginVertical="10dp"
         android:background="@drawable/cutomlengkung"
         android:text="Profil"/>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/cutomlengkung"
+        android:text="LOGOUT"/>
 </LinearLayout>

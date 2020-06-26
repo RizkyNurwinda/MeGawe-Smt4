@@ -16,9 +16,6 @@
         android:layout_marginRight="16dp"
         android:orientation="vertical">
 
-
-
-
         <ImageView
             android:id="@+id/imglogin"
             android:layout_width="100dp"
