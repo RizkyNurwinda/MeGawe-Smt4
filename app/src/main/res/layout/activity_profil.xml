@@ -225,9 +225,9 @@
                                 android:layout_width="300dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12dp"
-                                android:text="@string/login"
                                 android:background="@drawable/cutomlengkung"
-                                android:textColor="@color/putih"/>
+                                android:text="@string/login"
+                                android:textColor="@color/putih" />
 
 
                             <Button
@@ -237,7 +237,7 @@
                                 android:layout_marginTop="8dp"
                                 android:background="@drawable/cutomlengkung"
                                 android:text="LOGOUTT"
-                                android:textColor="@color/putih"/>
+                                android:textColor="@color/putih" />
                         </LinearLayout>
                     </LinearLayout>
 
