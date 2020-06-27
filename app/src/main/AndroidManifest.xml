@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityLowonganKerja"></activity>
+        <activity android:name=".ActivityLowonganKerja"
+            android:theme="@style/MyLightActionBar"></activity>
         <activity
             android:name=".HapusActivity"
             android:parentActivityName=".RekomendasiActivity"

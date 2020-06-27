@@ -1,115 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/constraintLayout"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@android:color/darker_gray"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/border"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:paddingVertical="10dp">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView"
-        android:layout_marginTop="8dp"
-        android:layout_width="386dp"
-        android:layout_height="wrap_content"
-        app:cardCornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01999998"
-        tools:layout_conversion_absoluteHeight="100dp"
-        tools:layout_conversion_absoluteWidth="408dp">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/job"
+        android:id="@+id/imgreport"
+        />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:layout_conversion_absoluteHeight="100dp"
-            tools:layout_conversion_absoluteWidth="408dp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="20dp">
+            android:text="Web Developer"
+            android:textColor="@color/colorMain"
+            android:textSize="18dp"
+            android:id="@+id/lowongan"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PT Enseval Putera Megatrading"
+            android:id="@+id/kota"
+            />
 
-            <ImageView
-                android:id="@+id/imgreport"
-                android:layout_width="74dp"
-                android:layout_height="59dp"
-                android:src="@drawable/job"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.051"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.333"
-                tools:layout_conversion_absoluteHeight="62dp"
-                tools:layout_conversion_absoluteWidth="49dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jakarta"
+            android:textColor="@color/colorBlack"
+            android:id="@+id/tdeskripsi"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:text="22-01-2020"
+            android:id="@+id/tanggal"
+            />
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="60dp"
+            android:layout_marginRight="60dp"
+            android:inputType="text"
+            android:text="STATUS"
+            android:textSize="10sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-            <TextView
-                android:id="@+id/tanggal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="21-07-1999"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.050"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imgreport"
-                app:layout_constraintVertical_bias="0.0" />
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/lowongan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:text="LOWONGAN"
-                android:textSize="10sp"
-                android:textStyle="bold|italic"
-                app:layout_constraintStart_toEndOf="@+id/imgreport"
-                app:layout_constraintTop_toTopOf="@+id/imgreport"
-                tools:layout_conversion_absoluteHeight="19dp"
-                tools:layout_conversion_absoluteWidth="30dp" />
 
-            <TextView
-                android:id="@+id/kota"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="KOTA"
-                android:layout_marginStart="12dp"
-                android:textSize="10sp"
-                android:textStyle="bold|italic"
-                app:layout_constraintStart_toEndOf="@+id/imgreport"
-                app:layout_constraintTop_toBottomOf="@+id/lowongan"
-                android:layout_marginLeft="12dp" />
 
-            <TextView
-                android:id="@+id/tdeskripsi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="DESKRIPSI"
-                android:layout_marginStart="12dp"
-                android:inputType="text"
-                android:textSize="10sp"
-                android:textStyle="bold|italic"
-                app:layout_constraintStart_toEndOf="@+id/imgreport"
-                app:layout_constraintTop_toBottomOf="@+id/kota"
-                android:layout_marginLeft="12dp" />
-
-            <Button
-                android:id="@+id/status"
-                android:background="@drawable/cutomlengkung"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="60dp"
-                android:layout_marginRight="60dp"
-                android:inputType="text"
-                android:text="STATUS"
-                android:textSize="10sp"
-                android:textStyle="bold|italic"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.cardview.widget.CardView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
