@@ -31,7 +31,7 @@ public class ActivityLowonganKerja extends AppCompatActivity  {
     RecyclerView recyclerView;
     List<ModelLowongan> modelDataList;
     AdapterLowongan adapterLowongan;
-    public static final String IPServer = "http://192.168.43.2/Web-Smt4/RestApi/api/lowongan";
+    public static final String IPServer = "http://192.168.43.2/MeGawe-Web-Smt4/RestApi/api/lowongan";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

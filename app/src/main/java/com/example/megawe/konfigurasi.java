@@ -7,9 +7,10 @@ public class konfigurasi {
     public static final String URL_UPDATE_EMP = "http://192.168.1.9/Android/pegawai/updatePgw.php";
     public static final String URL_DELETE_EMP = "http://192.168.1.9/Android/pegawai/hapusPgw.php?id=";
 
-//    ip dirubah sesuai laptop masing" sesuai ip local
-    public static final String URL_LOGIN = "http://192.168.43.68/Web-Smt4/Api/LoginApi";
-    public static final String URL_REGISTER = "http://192.168.43.68/Web-Smt4/Api/RegisterApi";
+    //    ip dirubah sesuai laptop masing" sesuai ip local
+    public static final String URL_LOGIN = "http://192.168.43.2/MeGawe-Web-Smt4/Api/LoginApi";
+    public static final String URL_REGISTER = "http://192.168.43.2/MeGawe-Web-Smt4/Api/RegisterApi";
+    public static final String URL_PROFIL = "http://192.168.43.2/MeGawe-Web-Smt4/Api/Profil";
 
     //Dibawah ini merupakan Kunci yang akan digunakan untuk mengirim permintaan ke Skrip PHP
     public static final String KEY_EMP_ID = "id";
@@ -28,4 +29,3 @@ public class konfigurasi {
     //emp itu singkatan dari Employee
     public static final String EMP_ID = "emp_id";
 }
-

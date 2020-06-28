@@ -40,13 +40,74 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
+                        <ImageView
+                            android:id="@+id/ivfoto"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/user_icon"
+                            android:layout_gravity="center"
+                            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/imageView3"
+                            app:layout_constraintVertical_bias="0.503" />
+
+
+                        <RelativeLayout
+                            android:id="@+id/linearLayout0"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="24dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginRight="24dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                            <TextView
+                                android:id="@+id/textView0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_gravity="left"
+                                android:text="No Identitas"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tvID"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:text="E3118xxxx"
+                                android:textSize="15dp" />
+
+
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/view0"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginRight="24dp"
+                            android:background="@color/abu_tua"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
                         <RelativeLayout
                             android:id="@+id/linearLayout"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="24dp"
                             android:layout_marginLeft="24dp"
-                            android:layout_marginTop="24dp"
+                            android:layout_marginTop="8dp"
                             android:layout_marginEnd="24dp"
                             android:layout_marginRight="24dp"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -63,12 +124,12 @@
                                 android:textSize="15dp" />
 
                             <TextView
-                                android:id="@+id/textView2"
+                                android:id="@+id/tvNama"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_gravity="right"
-                                android:text="Fariz Gustafianto"
+                                android:text="Amry Fariz Ratna"
                                 android:textSize="15dp" />
 
 
@@ -108,16 +169,16 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentLeft="true"
                                 android:layout_gravity="left"
-                                android:text="Alamat"
+                                android:text="Jenis Kelamin"
                                 android:textSize="15dp" />
 
                             <TextView
-                                android:id="@+id/textView4"
+                                android:id="@+id/tvJK"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_gravity="right"
-                                android:text="Jember , 24 Maret 1999"
+                                android:text="L/P"
                                 android:textSize="15dp" />
                         </RelativeLayout>
 
@@ -155,21 +216,110 @@
                                 android:layout_alignParentLeft="true"
                                 android:layout_gravity="left"
                                 android:layout_marginLeft="0dp"
-                                android:text="Jenis Kelamin"
+                                android:text="TTL"
                                 android:textSize="15dp" />
 
                             <TextView
-                                android:id="@+id/txt_bb"
+                                android:id="@+id/tvTTL"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_gravity="right"
-                                android:text="57/165"
+                                android:text="Jember, 24 Maret 1999"
+                                android:textSize="15dp" />
+                        </RelativeLayout>
+                        <View
+                            android:id="@+id/baris4"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginRight="24dp"
+                            android:background="@color/abu_tua"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginRight="24dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/baris3">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="0dp"
+                                android:text="Agama"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tvAgama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:text="Islam"
                                 android:textSize="15dp" />
                         </RelativeLayout>
 
                         <View
-                            android:id="@+id/baris4"
+                            android:id="@+id/baris5"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginRight="24dp"
+                            android:background="@color/abu_tua"
+                            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"></View>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginRight="24dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/baris5">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_gravity="left"
+                                android:text="Alamat"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tvAlamat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:text="Jl.Manggar 5"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/baris6"
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:layout_marginStart="24dp"
@@ -198,20 +348,65 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentLeft="true"
                                 android:layout_gravity="left"
-                                android:text="Tempat , Tanggal lahir"
+                                android:text="No HP"
                                 android:textSize="15dp" />
 
                             <TextView
-                                android:id="@+id/txt_alamat"
+                                android:id="@+id/tvNo"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_gravity="right"
-                                android:layout_marginRight="46dp"
-                                android:text="Jl.Manggar 5"
+                                android:text="082xxx"
                                 android:textSize="15dp" />
 
                         </RelativeLayout>
+
+                        <View
+                            android:id="@+id/baris7"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginRight="24dp"
+                            android:background="@color/abu_tua"
+                            app:layout_constraintTop_toBottomOf="@+id/relativeLayout"></View>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="24dp"
+                            android:layout_marginLeft="24dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginRight="24dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/baris5">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_gravity="left"
+                                android:text="Email"
+                                android:textSize="15dp" />
+
+                            <TextView
+                                android:id="@+id/tvEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="right"
+                                android:text="a@gmail.com"
+                                android:textSize="15dp" />
+
+                        </RelativeLayout>
+
+
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -225,7 +420,7 @@
                                 android:layout_width="300dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="12dp"
-                                android:text="@string/login"
+                                android:text="Edit Profil"
                                 android:background="@drawable/cutomlengkung"
                                 android:textColor="@color/putih"/>
 
@@ -236,7 +431,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
                                 android:background="@drawable/cutomlengkung"
-                                android:text="LOGOUTT"
+                                android:text="LOGOUT"
                                 android:textColor="@color/putih"/>
                         </LinearLayout>
                     </LinearLayout>

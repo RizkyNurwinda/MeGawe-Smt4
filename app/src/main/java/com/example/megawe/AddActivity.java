@@ -182,7 +182,7 @@ public class AddActivity extends AppCompatActivity {
                     sessionManager.createSession(id_user, username, level);
 
 //                    intent ke afterloginactivity
-                    Intent afterLogin = new Intent(AddActivity.this, AfterLoginActivity.class);
+                    Intent afterLogin = new Intent(AddActivity.this, MainActivity.class);
                     startActivity(afterLogin);
                     finish();
                 } catch (Exception e) {
@@ -209,5 +209,3 @@ public class AddActivity extends AppCompatActivity {
         requestQueue.add(loginRequest);
     }
 }
-
-

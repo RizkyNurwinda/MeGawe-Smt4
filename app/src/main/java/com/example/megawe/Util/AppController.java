@@ -1,4 +1,4 @@
-package com.example.megawe.Util;
+package com.example.megawe.util;
 
 import android.app.Application;
 import android.text.TextUtils;

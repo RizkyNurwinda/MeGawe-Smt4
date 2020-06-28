@@ -42,10 +42,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nama Depan" />
+                    android:text="Nama" />
 
                 <EditText
-                    android:id="@+id/etUbahNamaDepan"
+                    android:id="@+id/etUbahNama"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -62,10 +62,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nama Belakang" />
+                    android:text="Jenis Kelamin" />
 
                 <EditText
-                    android:id="@+id/etUbahNamaBelakang"
+                    android:id="@+id/etUbahJK"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -80,10 +80,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Telepon" />
+                    android:text="TTL" />
 
                 <EditText
-                    android:id="@+id/etUbahTeleponKandidat"
+                    android:id="@+id/etUbahTTL"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="phone" />
@@ -99,10 +99,28 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:text="Agama" />
+
+                <EditText
+                    android:id="@+id/etUbahAgama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="Alamat" />
 
                 <EditText
-                    android:id="@+id/etUbahAlamatKandidat"
+                    android:id="@+id/etUbahAlamat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -117,30 +135,10 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lokasi Kerja Harapan" />
-
-                <Spinner
-                    android:id="@+id/etLokasiKerja"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@android:drawable/btn_dropdown"
-                    android:spinnerMode="dropdown" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp"
-                android:layout_marginVertical="5dp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Deskripsi Diri" />
+                    android:text="No HP" />
 
                 <EditText
-                    android:id="@+id/etUbahDeskripsiDiri"
+                    android:id="@+id/etUbahNoHp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </LinearLayout>
@@ -155,31 +153,32 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Gaji Harapan" />
+                    android:text="Email" />
 
-                <LinearLayout
+                <EditText
+                    android:id="@+id/etUbahEmail"
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginVertical="5dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:weightSum="8">
+                    android:layout_gravity="center"
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Rp."
-                        android:textSize="20dp" />
+                    android:background="@drawable/cutomlengkung"
+                    android:text="Update" />
 
-                    <EditText
-                        android:id="@+id/etUbahGaji"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="7"
-                        android:inputType="number" />
-
-
-                </LinearLayout>
 
             </LinearLayout>
+
 
 
         </LinearLayout>

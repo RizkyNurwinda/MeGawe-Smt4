@@ -35,7 +35,7 @@
         <activity
             android:name=".ProfilActivity"
             android:parentActivityName=".AfterLoginActivity"
-            android:theme="@style/MyLightActionBar" />
+            android:theme="@style/NoActionBar" />
         <activity
             android:name=".AddPekerjaanActivity"
             android:parentActivityName=".AfterLoginActivity"
@@ -43,9 +43,7 @@
         <activity
             android:name=".RegistrasiActivity"
             android:theme="@style/MyLightActionBar" />
-        <activity
-            android:name=".AddActivity"
-            android:theme="@style/MyLightActionBar" />
+
         <activity
             android:name=".PesanActivity"
             android:label="@string/pesan"
@@ -60,7 +58,11 @@
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionBar">
+            android:theme="@style/NoActionBar"/>
+        <activity
+            android:name=".AddActivity"
+            android:theme="@style/MyLightActionBar" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
