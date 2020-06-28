@@ -24,17 +24,16 @@
         android:layout_marginLeft="10dp"
         android:text="Hello, Kamu bisa mengirim Pesan Di sini"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+     <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
         android:onClick="onButtonTap"
         android:text="Kirim Email"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/cutomlengkung"
         android:textColor="#fff"
         android:layout_gravity="center"
         android:textSize="20sp"
         tools:layout_editor_absoluteX="139dp"
         tools:layout_editor_absoluteY="167dp" />
-
 </LinearLayout>
