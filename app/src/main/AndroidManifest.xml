@@ -54,15 +54,16 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBar" />
-        <activity
-            android:name=".AddActivity"
-            android:theme="@style/MyLightActionBar" />
+
         <activity
             android:name=".MainActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionBar">
+            android:theme="@style/NoActionBar"/>
 
+        <activity
+            android:name=".AddActivity"
+            android:theme="@style/MyLightActionBar" >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
