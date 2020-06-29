@@ -32,7 +32,8 @@ public class ActivityLowonganKerja extends AppCompatActivity  {
     List<ModelLowongan> modelDataList;
     AdapterLowongan adapterLowongan;
    // public static final String IPServer = "http://mamij.mif-project.com/RestApi/api/lowongan";
-    public static final String IPServer = "http://192.168.42.185/MeGawe-Web-Smt4/RestApi/api/lowongan";
+//    public static final String IPServer = "http://192.168.42.185/MeGawe-Web-Smt4/RestApi/api/lowongan";
+    public static final String IPServer = "http://192.168.43.2/MeGawe-Web-Smt4/RestApi/api/lowongan";
 
 
     @Override

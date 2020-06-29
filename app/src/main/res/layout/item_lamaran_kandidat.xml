@@ -33,25 +33,25 @@
         android:orientation="vertical"
         >
 
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:textColor="@color/colorMain"
-            android:text="Back End Developer"
-            android:id="@+id/tvJudulLamaran"
-            />
+<!--        <TextView-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="20dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/colorMain"-->
+<!--            android:text="Back End Developer"-->
+<!--            android:id="@+id/tvJudulLamaran"-->
+<!--            />-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="17dp"
-            android:textColor="@color/colorBlack"
-            android:text="Rp. 7.000.000"
-            android:id="@+id/tvGajiLamaran"
-            />
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="17dp"-->
+<!--            android:textColor="@color/colorBlack"-->
+<!--            android:text="Rp. 7.000.000"-->
+<!--            android:id="@+id/tvGajiLamaran"-->
+<!--            />-->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -68,6 +68,18 @@
             android:textColor="@color/colorBlack"
             android:text="Menunggu"
             android:id="@+id/tvStatusLamaran"
+            android:layout_marginBottom="10dp"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            />
+        <TextView
+            android:gravity="center"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="@color/colorBlack"
+            android:text="Terferifikasi"
+            android:id="@+id/tvKeterangan"
             android:layout_marginBottom="10dp"
             android:paddingVertical="5dp"
             android:paddingHorizontal="10dp"

@@ -1,88 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tool="http://schemas.android.com/tools"
-    android:layout_height="fill_parent"
-    android:layout_width="fill_parent"
-    android:orientation="vertical"
-    tool:context=".RiwayatActivity">
-
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="62dp"-->
-<!--        android:background="@color/colorAccent">-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/megawe_toolbar"-->
-<!--            android:layout_width="200dp"-->
-<!--            android:layout_height="200dp"-->
-<!--            android:src="@drawable/pngmegawe"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginLeft="80dp"-->
-<!--            android:layout_marginTop="20dp"/>-->
-<!--    </LinearLayout>-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RiwayatActivity">
 
 
-    <SearchView
-        android:id="@+id/search_view"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:iconifiedByDefault="false"
-        android:padding="2dp"
-        android:queryHint="Cari disini"/>
-
-
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/lowongan"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerriwayat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="18dp"
-        android:background="@drawable/lengkung"
-        android:clickable="true"
-        android:foreground="?android:attr/selectableItemBackground">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/item_lamaran_kandidat"/>
 
-        <TextView
-            android:id="@+id/tvperusahaan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:typeface="serif"
-            android:layout_marginLeft="5dp"
-            android:textSize="18dp"
-            android:text="PT LUKAS PERDANA"/>
-        <TextView
-            android:id="@+id/tvketerangan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:layout_marginLeft="5dp"
-            android:typeface="serif"
-            android:text="Dibutuhkan tenaga keahlian untuk memperbaiki website deskripsi yang diberikan. Waktu kerja 14 hari"/>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="80dp">
-
-            <Button
-                android:id="@+id/btnedit"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Edit" />
-
-            <Button
-                android:text="Hapus"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/btnhapus"
-                android:layout_weight="1"/>
-
-        </LinearLayout>
-
-
-
-    </androidx.cardview.widget.CardView>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
