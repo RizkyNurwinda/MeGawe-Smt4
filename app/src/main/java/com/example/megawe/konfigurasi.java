@@ -10,9 +10,9 @@ public class konfigurasi {
     //    ip dirubah sesuai laptop masing" sesuai ip local
 //    public static final String URL_LOGIN = "http://192.168.42.185/MeGawe-Web-Smt4/Api/LoginApi";
 //    public static final String URL_REGISTER = "http://192.168.42.185/MeGawe-Web-Smt4/Api/RegisterApi";
-    public static final String URL_LOGIN = "http://192.168.43.2/MeGawe-Web-Smt4/Api/LoginApi";
-    public static final String URL_REGISTER = "http://192.168.43.2/MeGawe-Web-Smt4/Api/RegisterApi";
-    public static final String URL_RIWAYAT = "http://192.168.43.2/MeGawe-Web-Smt4/Api/Riwayat/";
+    public static final String URL_LOGIN = "http://192.168.42.141/MeGawe-Web-Smt4/Api/LoginApi";
+    public static final String URL_REGISTER = "http://192.168.42.141/MeGawe-Web-Smt4/Api/RegisterApi";
+    public static final String URL_RIWAYAT = "http://192.168.42.141/MeGawe-Web-Smt4/Api/Riwayat/";
     public static final String URL_PROFIL = "http://mamij.mif-project.com/Api/Profil";
 
     //Dibawah ini merupakan Kunci yang akan digunakan untuk mengirim permintaan ke Skrip PHP

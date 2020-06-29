@@ -2,7 +2,7 @@ package com.example.megawe.Util;
 
 public class ServerAPI {
     //public static final String URL_REKOMENDASI = "http://mamij.mif-project.com/android/member";
-    public static final String URL_REKOMENDASI = "http://192.168.42.185/MeGawe-Web-Smt4/android/member";
+    public static final String URL_REKOMENDASI = "http://192.168.42.141/MeGawe-Web-Smt4/android/member";
     public static final String  URL_LOGIN = "http://192.168.43.34/CIANTIK/Api/LoginApi";
     public static final String URL_ANTRIAN = "http://192.168.43.34/CIANTIK/Api/Antrian";
     public static final String URL_INFO = "http://192.168.43.34/CIANTIK/Api/Info";
