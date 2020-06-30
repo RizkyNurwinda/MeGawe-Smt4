@@ -2,21 +2,19 @@ package com.example.megawe.Model;
 
 public class ModelProfil {
 
-    String ttl, no_identitas, nama, jenis_kelamin, no_hp, alamat, foto, tanggal_lahir, tempat_lahir, agama, email;
+    String tanggal_lahir, no_identitas, nama, jenis_kelamin, no_hp, alamat, foto, agama, email;
 
     public ModelProfil() {
     }
 
-    public ModelProfil(String ttl, String no_identitas, String nama, String jenis_kelamin, String no_hp, String alamat, String foto, String tempat_lahir, String tanggal_lahir, String agama, String email) {
+    public ModelProfil(String tanggal_lahir, String no_identitas, String nama, String jenis_kelamin, String no_hp, String alamat, String foto,  String agama, String email) {
         this.no_identitas = no_identitas;
         this.nama = nama;
         this.jenis_kelamin = jenis_kelamin;
         this.no_hp = no_hp;
         this.alamat = alamat;
         this.foto = foto;
-        this.tempat_lahir = tempat_lahir;
         this.tanggal_lahir = tanggal_lahir;
-        this.ttl = ttl;
         this.agama = agama;
         this.email = email;
 
@@ -83,28 +81,16 @@ public class ModelProfil {
         return email;
     }
 
-    public void setAgama(String agama) {
-        this.agama = agama;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getAgama() {
         return agama;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setAgama(String agama) {
+        this.agama = agama;
     }
 
-    public void setTempat_lahir(String tempat_lahir) {
-        this.tempat_lahir = tempat_lahir;
-    }
-
-
-    public void setTtl(String tempat_lahir) {
-        this.ttl = ttl;
-    }
-
-    public String getTtl() {
-        return ttl;
-    }
 }

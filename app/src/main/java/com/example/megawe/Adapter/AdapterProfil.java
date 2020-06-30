@@ -4,12 +4,15 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.megawe.Model.ModelProfil;
 import com.example.megawe.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -33,16 +36,17 @@ public class AdapterProfil extends RecyclerView.Adapter<AdapterProfil.HolderData
     @Override
     public void onBindViewHolder(AdapterProfil.HolderData holder, int position) {
         ModelProfil md  = mItems.get(position);
-        //holder.ivfoto.setImageURI(md.getFoto());
-        //Glide.with(context).load(md.getFoto()).into(holder.ivfoto);
-        //Picasso.get().load(md.getFoto()).into(holder.ivfoto);
-        holder.tvid.setText(md.getNo_identitas());
+//        holder.ivfoto.setImageURI(md.getFoto());
+//        Glide.with(context).load(md.getFoto()).into(holder.ivfoto);
+//        Picasso.get().load(md.getFoto()).into(holder.ivfoto);
+        holder.tvno_identitas.setText(md.getNo_identitas());
         holder.tvnama.setText(md.getNama());
         holder.tvjenis_kelamin.setText(md.getJenis_kelamin());
         holder.tvno_hp.setText(md.getNo_hp());
         holder.tvalamat.setText(md.getAlamat());
-        //holder.tvttl.setText(md.getTempat_lahir() + "," + md.getTanggal_lahir());
-        holder.tvttl.setText(md.getTtl());
+        holder.tvtanggal_lahir.setText(md.getTanggal_lahir());
+        holder.tvagama.setText(md.getAgama());
+        holder.tvemail.setText(md.getEmail());
 
         holder.md = md;
     }
@@ -54,21 +58,24 @@ public class AdapterProfil extends RecyclerView.Adapter<AdapterProfil.HolderData
 
     class HolderData extends RecyclerView.ViewHolder
     {
-        TextView tvnama,tvjenis_kelamin, tvalamat, tvttl, tvno_hp, tvid;
-        //ImageView ivfoto;
+        TextView tvtanggal_lahir, tvno_identitas, tvnama, tvjenis_kelamin, tvno_hp, tvalamat, tvagama, tvemail;
+        ImageView ivfoto;
         ModelProfil md;
 
         public  HolderData (View view)
         {
             super(view);
 
-            //ivfoto = (ImageView) view.findViewById(R.id.foto);
-            tvid = (TextView) view.findViewById(R.id.tvID);
+            ivfoto = (ImageView) view.findViewById(R.id.ivfoto);
+            tvno_identitas = (TextView) view.findViewById(R.id.tvID);
+            tvtanggal_lahir = (TextView) view.findViewById(R.id.tvTTL);
             tvnama = (TextView) view.findViewById(R.id.tvNama);
             tvjenis_kelamin = (TextView) view.findViewById(R.id.tvJK);
-            tvno_hp = (TextView) view.findViewById(R.id.tvNo);
+            tvno_hp = (TextView) view.findViewById(R.id.tvNoHp);
             tvalamat = (TextView) view.findViewById(R.id.tvAlamat);
-            tvttl = (TextView) view.findViewById(R.id.tvTTL);
+            tvagama = (TextView) view.findViewById(R.id.tvAgama);
+            tvemail = (TextView) view.findViewById(R.id.tvEmail);
+
 
         }
     }

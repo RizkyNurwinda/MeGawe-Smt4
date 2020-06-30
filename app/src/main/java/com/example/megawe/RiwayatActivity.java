@@ -97,6 +97,8 @@ public class RiwayatActivity extends AppCompatActivity  {
                             try {
                                 JSONObject data = response.getJSONObject(i);
                                 ModelRiwayat md = new ModelRiwayat();
+                                md.setNamaPerusahan(data.getString("namaPerusahaan"));
+                                md.setGaji(data.getString("gaji"));
                                 md.setTglDaftar(data.getString("tglDaftar"));
                                 md.setStatusDaftar(data.getString("statusDaftar"));
                                 md.setKeterangan(data.getString("keterangan"));
@@ -120,7 +122,7 @@ public class RiwayatActivity extends AppCompatActivity  {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 Map<String, String> params = new HashMap<>();
-                params.put("id_user", mId_user);
+                params.put("idUser", mId_user);
                 params.put("nama", mNama);
                 return params;
             }
@@ -129,4 +131,3 @@ public class RiwayatActivity extends AppCompatActivity  {
         AppController.getInstance().addToRequestQueue(reqData);
     }
 }
-

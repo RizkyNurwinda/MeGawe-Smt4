@@ -55,28 +55,28 @@ public class ProfilActivity extends AppCompatActivity implements View.OnClickLis
         sessionManager.checkLogin();
         HashMap<String, String> user = sessionManager.getUserDetail();
         String mIdUser = user.get(sessionManager.ID_USER);
-        String mID = user.get(sessionManager.NO_IDENTITAS);
-        String mNama = user.get(sessionManager.NAMA);
+        String mIDMember = user.get(sessionManager.NO_IDENTITAS);
+        String mNamaMember = user.get(sessionManager.NAMA);
         String mJk = user.get(sessionManager.JENIS_KELAMIN);
-        String mTTL = user.get(sessionManager.TEMPAT_LAHIR) + "," + user.get(sessionManager.TANGGAL_LAHIR);
+        String mTTL = user.get(sessionManager.TANGGAL_LAHIR);
         String mAlamat = user.get(sessionManager.ALAMAT);
         String mAgama = user.get(sessionManager.AGAMA);
         String mNo = user.get(sessionManager.NO_HP);
         String mEmail = user.get(sessionManager.EMAIL);
         String mFoto = user.get(sessionManager.FOTO);
-        String URL_FOTO = "http://192.168.43.2/MeGawe-Web-Smt4/assets/home/img/member"+mFoto;
+//        String URL_FOTO = "http://192.168.43.2/MeGawe-Web-Smt4/assets/home/img/member"+mFoto;
 
         //set foto
-        Glide.with (ProfilActivity.this)
-                // LOAD URL DARI INTERNET
-                .load(URL_FOTO)
-                // LOAD GAMBAR AWAL SEBELUM GAMBAR UTAMA MUNCUL, BISA DARI LOKAL DAN INTERNET
-                .placeholder(R.drawable.ic_account_circle_black_24dp)
-                //. LOAD GAMBAR SAAT TERJADI KESALAHAN MEMUAT GMBR UTAMA
-                .error(R.drawable.ic_account_circle_black_24dp)
-                .into(foto);
-        no_identitas.setText(mID);
-        nama.setText(mNama);
+//        Glide.with (ProfilActivity.this)
+//                // LOAD URL DARI INTERNET
+//                .load(URL_FOTO)
+//                // LOAD GAMBAR AWAL SEBELUM GAMBAR UTAMA MUNCUL, BISA DARI LOKAL DAN INTERNET
+//                .placeholder(R.drawable.ic_account_circle_black_24dp)
+//                //. LOAD GAMBAR SAAT TERJADI KESALAHAN MEMUAT GMBR UTAMA
+//                .error(R.drawable.ic_account_circle_black_24dp)
+//                .into(foto);
+        no_identitas.setText(mIDMember);
+        nama.setText(mNamaMember);
         jenis_kelamin.setText(mJk);
         ttl.setText(mTTL);
         no_hp.setText(mNo);
@@ -91,7 +91,7 @@ public class ProfilActivity extends AppCompatActivity implements View.OnClickLis
         nama = (TextView) findViewById(R.id.tvNama);
         jenis_kelamin = (TextView) findViewById(R.id.tvJK);
         ttl = (TextView) findViewById(R.id.tvTTL);
-        no_hp = (TextView) findViewById(R.id.tvNo);
+        no_hp = (TextView) findViewById(R.id.tvNoHp);
         alamat = (TextView) findViewById(R.id.tvAlamat);
         email = (TextView) findViewById(R.id.tvEmail);
         agama = (TextView) findViewById(R.id.tvAgama);
@@ -119,17 +119,15 @@ public class ProfilActivity extends AppCompatActivity implements View.OnClickLis
                             try {
                                 JSONObject data = response.getJSONObject(i);
                                 ModelProfil md = new ModelProfil();
-                                md.setNo_identitas(data.getString("no_identitas"));
-                                md.setJenis_kelamin(data.getString("jenis_kelamin"));
-                                md.setNama(data.getString("nama"));
-                                md.setTtl(data.getString("ttl"));
-                                md.setNo_hp(data.getString("no_hp"));
-                                md.setAlamat(data.getString("alamat"));
-                                md.setEmail(data.getString("email"));
+                                md.setNo_identitas(data.getString("idMember"));
+                                md.setNama(data.getString("namaMember"));
+                                md.setJenis_kelamin(data.getString("jenisKelamin"));
+                                md.setTanggal_lahir(data.getString("tanggalLahir"));
                                 md.setAgama(data.getString("agama"));
-                                md.setTempat_lahir(data.getString("tempat_lahir"));
-                                md.setTanggal_lahir(data.getString("tanggal_lahir"));
-                                md.setFoto(data.getString("foto"));
+                                md.setAlamat(data.getString("alamat"));
+                                md.setNo_hp(data.getString("noTelp"));
+                                md.setEmail(data.getString("email"));
+                                md.setFoto(data.getString("fotoMember"));
                                 mItems.add(md);
                             } catch (JSONException e) {
                                 e.printStackTrace();

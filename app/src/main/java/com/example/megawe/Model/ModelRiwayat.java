@@ -2,14 +2,32 @@ package com.example.megawe.Model;
 
 public class ModelRiwayat {
 
-    String tglDaftar, statusDaftar, keterangan;
+    String namaPerusahan, gaji, tglDaftar, statusDaftar, keterangan;
 
     public ModelRiwayat(){}
 
-    public ModelRiwayat(String tglDaftar, String statusDaftar, String keterangan) {
+    public ModelRiwayat(String namaPerusahan, String gaji, String tglDaftar, String statusDaftar, String keterangan) {
+        this.namaPerusahan= namaPerusahan;
+        this.gaji= gaji;
         this.tglDaftar= tglDaftar;
         this.statusDaftar = statusDaftar;
         this.keterangan = keterangan;
+    }
+
+    public String getNamaPerusahan() {
+        return namaPerusahan;
+    }
+
+    public void setNamaPerusahan(String namaPerusahan) {
+        this.namaPerusahan = namaPerusahan;
+    }
+
+    public String getGaji() {
+        return gaji;
+    }
+
+    public void setGaji(String gaji) {
+        this.gaji = gaji;
     }
 
     public String getTglDaftar() {

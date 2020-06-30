@@ -177,9 +177,18 @@ public class AddActivity extends AppCompatActivity {
                     String id_user = objekHasil.getString("idUser");
                     String username = objekHasil.getString("username");
                     String level = objekHasil.getString("level");
+                    String no_identitas = objekHasil.getString("idMember");
+                    String nama = objekHasil.getString("namaMember");
+                    String jenis_kelamin = objekHasil.getString("jenisKelamin");
+                    String tanggal_lahir = objekHasil.getString("tanggalLahir");
+                    String no_hp = objekHasil.getString("noTelp");
+                    String alamat = objekHasil.getString("alamat");
+                    String agama = objekHasil.getString("agama");
+                    String email = objekHasil.getString("email");
+                    String foto = objekHasil.getString("fotoMember");
 
 //                    menyimpan session login
-                    sessionManager.createSession(id_user, username, level);
+                    sessionManager.createSession(id_user, username, level, no_identitas, nama, jenis_kelamin,  tanggal_lahir,  no_hp,  alamat,  agama,  email,  foto);
 
 //                    intent ke afterloginactivity
                     Intent afterLogin = new Intent(AddActivity.this, MainActivity.class);

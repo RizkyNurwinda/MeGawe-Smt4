@@ -38,26 +38,11 @@ class SessionManager {
     }
 
     //    fungsi untuk menyimpan session login
-    public void createSession(String id_user, String username, String level) {
+    public void createSession(String id_user, String username, String level, String no_identitas, String nama, String jenis_kelamin, String tempat_lahir, String tanggal_lahir, String no_hp, String alamat, String agama, String email, String foto) {
         editor.putBoolean(LOGIN_STATUS, true);
         editor.putString(ID_USER, id_user);
         editor.putString(USERNAME, username);
         editor.putString(LEVEL, level);
-//        editor.putString(ID_AKSES, id_akses);
-//        editor.putString(NO_IDENTITAS, no_identitas);
-//        editor.putString(NAMA, nama);
-//        editor.putString(JENIS_KELAMIN, jenis_kelamin);
-//        editor.putString(TEMPAT_LAHIR, tempat_lahir);
-//        editor.putString(TANGGAL_LAHIR, tanggal_lahir);
-//        editor.putString(NO_HP, no_hp);
-//        editor.putString(ALAMAT, alamat);
-//        editor.putString(AGAMA, agama);
-//        editor.putString(EMAIL, email);
-//        editor.putString(FOTO, foto);
-        editor.apply();
-    }
-
-    public void createSession2(String id_akses, String username, String no_identitas, String nama, String jenis_kelamin, String tempat_lahir, String tanggal_lahir, String no_hp, String alamat, String agama, String email, String foto){
         editor.putString(NO_IDENTITAS, no_identitas);
         editor.putString(NAMA, nama);
         editor.putString(JENIS_KELAMIN, jenis_kelamin);
@@ -65,12 +50,26 @@ class SessionManager {
         editor.putString(TANGGAL_LAHIR, tanggal_lahir);
         editor.putString(NO_HP, no_hp);
         editor.putString(ALAMAT, alamat);
-        editor.putString(USERNAME, username);
         editor.putString(AGAMA, agama);
         editor.putString(EMAIL, email);
         editor.putString(FOTO, foto);
         editor.apply();
     }
+
+//    public void createSession2(String id_akses, String username, String no_identitas, String nama, String jenis_kelamin, String tempat_lahir, String tanggal_lahir, String no_hp, String alamat, String agama, String email, String foto){
+//        editor.putString(NO_IDENTITAS, no_identitas);
+//        editor.putString(NAMA, nama);
+//        editor.putString(JENIS_KELAMIN, jenis_kelamin);
+//        editor.putString(TEMPAT_LAHIR, tempat_lahir);
+//        editor.putString(TANGGAL_LAHIR, tanggal_lahir);
+//        editor.putString(NO_HP, no_hp);
+//        editor.putString(ALAMAT, alamat);
+//        editor.putString(USERNAME, username);
+//        editor.putString(AGAMA, agama);
+//        editor.putString(EMAIL, email);
+//        editor.putString(FOTO, foto);
+//        editor.apply();
+//    }
 
     //    fungsi untuk cek apakah user sudah login
     public boolean isLogin() {
@@ -175,5 +174,23 @@ class SessionManager {
 
     public String getFoto() {
         return sharedPreferences.getString(FOTO, null);
+    }
+
+    public void createSession(String id_user, String username, String level, String no_identitas, String nama, String jenis_kelamin, String tanggal_lahir, String no_hp, String alamat, String agama, String email, String foto) {
+        editor.putBoolean(LOGIN_STATUS, true);
+        editor.putString(ID_USER, id_user);
+        editor.putString(USERNAME, username);
+        editor.putString(LEVEL, level);
+        editor.putString(NO_IDENTITAS, no_identitas);
+        editor.putString(NAMA, nama);
+        editor.putString(JENIS_KELAMIN, jenis_kelamin);
+        editor.putString(TANGGAL_LAHIR, tanggal_lahir);
+        editor.putString(NO_HP, no_hp);
+        editor.putString(ALAMAT, alamat);
+        editor.putString(AGAMA, agama);
+        editor.putString(EMAIL, email);
+        editor.putString(FOTO, foto);
+        editor.apply();
+
     }
 }

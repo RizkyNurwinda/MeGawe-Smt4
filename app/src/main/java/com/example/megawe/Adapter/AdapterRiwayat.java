@@ -32,6 +32,8 @@ public class AdapterRiwayat extends RecyclerView.Adapter<AdapterRiwayat.HolderDa
     @Override
     public void onBindViewHolder(HolderData holder, int position) {
         ModelRiwayat md  = mItems.get(position);
+        holder.tvJudulLamaran.setText(md.getNamaPerusahan());
+        holder.tvGajiLamaran.setText(md.getGaji());
         holder.tvTanggalLamaran.setText(md.getTglDaftar());
         holder.tvStatusLamaran.setText(md.getStatusDaftar());
         holder.tvKeterangan.setText(md.getKeterangan());
@@ -46,13 +48,14 @@ public class AdapterRiwayat extends RecyclerView.Adapter<AdapterRiwayat.HolderDa
 
     class HolderData extends RecyclerView.ViewHolder
     {
-        TextView tvTanggalLamaran,tvStatusLamaran,tvKeterangan;
+        TextView tvJudulLamaran, tvGajiLamaran, tvTanggalLamaran,tvStatusLamaran,tvKeterangan;
         ModelRiwayat md;
 
         public  HolderData (View view)
         {
             super(view);
-
+            tvJudulLamaran = (TextView) view.findViewById(R.id.tvJudulLamaran);
+            tvGajiLamaran = (TextView) view.findViewById(R.id.tvGajiLamaran);
             tvTanggalLamaran = (TextView) view.findViewById(R.id.tvTanggalLamaran);
             tvStatusLamaran = (TextView) view.findViewById(R.id.tvStatusLamaran);
             tvKeterangan = (TextView) view.findViewById(R.id.tvKeterangan);

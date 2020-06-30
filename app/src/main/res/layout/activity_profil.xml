@@ -41,16 +41,24 @@
                         android:orientation="vertical">
 
                         <ImageView
-                            android:id="@+id/ivfoto"
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/user_icon"
+                            android:src="@drawable/orang"
                             android:layout_gravity="center"
-                            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="@+id/imageView3"
-                            app:layout_constraintVertical_bias="0.503" />
+                            android:id="@+id/imgreport"
+                            />
+                        <!--                        <ImageView-->
+                        <!--                            -->
+                        <!--                            android:id="@+id/ivfoto"-->
+                        <!--                            android:layout_width="100dp"-->
+                        <!--                            android:layout_height="100dp"-->
+                        <!--                            android:src="@drawable/user_icon"-->
+                        <!--                            android:layout_gravity="center"-->
+                        <!--                            app:layout_constraintBottom_toBottomOf="@+id/imageView3"-->
+                        <!--                            app:layout_constraintEnd_toEndOf="parent"-->
+                        <!--                            app:layout_constraintStart_toStartOf="parent"-->
+                        <!--                            app:layout_constraintTop_toTopOf="@+id/imageView3"-->
+                        <!--                            app:layout_constraintVertical_bias="0.503" />-->
 
 
                         <RelativeLayout
@@ -352,7 +360,7 @@
                                 android:textSize="15dp" />
 
                             <TextView
-                                android:id="@+id/tvNo"
+                                android:id="@+id/tvNoHp"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
